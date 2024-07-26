@@ -1,0 +1,93 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.main{
+    background: greenyellow;
+    display: flex;
+    justify-content: space-around;
+
+}
+ul{
+    list-style: none;
+    padding: 20px;
+}
+li{
+    font-size: 40px;
+    cursor: pointer;
+    position: relative;
+}
+li::after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: transparent;
+    content: "";
+    transition: .6s;
+}
+li:hover::after{
+    width: 100%;
+    background: #f00505;
+}
+li::before{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 2px;
+    background: transparent;
+    content: "";
+    transition: .6s;
+}
+li:hover::before{
+    width: 100%;
+    background: #f00505;
+}
+
+.about-li{
+    position: relative;
+}
+.about-div{
+    position: absolute;
+    background: #644bdfb8;
+    top: 46px;
+    left: -67px;
+    padding: 17px 22px;
+    border-radius: 10px;
+    display: none;
+}
+.about-li:hover .about-div{
+    display: block;
+}
+.link-li{
+    position: relative;
+}
+.link-div{
+    position: absolute;
+    background: #c1df4baf;
+    top: 0px;
+    left: 165px;
+    padding: 17px 22px;
+    border-radius: 10px;
+    display: none;
+}
+.link-li:hover .link-div{
+    display: block;
+}
+.youtube-li{
+    position: relative;
+}
+.youtube-div{
+    position: absolute;
+    background: #55e7346d;
+    left: 155px;
+    top: 0px;
+    padding: 22px 14px;
+    border-radius: 10px;
+    display: none;
+}
+.youtube-li:hover .youtube-div{
+    display: block;
+}
